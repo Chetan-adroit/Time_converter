@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'InterTightRegular';
+    src: url('../fonts/InterTightRegular/InterTightRegular.eot');
+    src: url('../fonts/InterTightRegular/InterTightRegular.eot') format('embedded-opentype'),
+         url('../fonts/InterTightRegular/InterTightRegular.woff2') format('woff2'),
+         url('../fonts/InterTightRegular/InterTightRegular.woff') format('woff'),
+         url('../fonts/InterTightRegular/InterTightRegular.ttf') format('truetype'),
+         url('../fonts/InterTightRegular/InterTightRegular.svg#InterTightRegular') format('svg');
+}
+@font-face {
+    font-family: 'InterTightBold';
+    src: url('../fonts/InterTightBold/InterTightBold.eot');
+    src: url('../fonts/InterTightBold/InterTightBold.eot') format('embedded-opentype'),
+         url('../fonts/InterTightBold/InterTightBold.woff2') format('woff2'),
+         url('../fonts/InterTightBold/InterTightBold.woff') format('woff'),
+         url('../fonts/InterTightBold/InterTightBold.ttf') format('truetype'),
+         url('../fonts/InterTightBold/InterTightBold.svg#InterTightBold') format('svg');
+}
+

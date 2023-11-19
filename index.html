@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/font.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <title>Time Converter</title>
+</head>
+<body>
+    <main>
+        <section class="section-TimeConverter">
+            <div class="container">
+                <div class="Text">
+                    <h1>Time Converter</h1>
+                    <p>Enter hours,minutes and seconds values to convert into seconds</p>
+                </div>
+                <div class="form-wrap">
+                    <form action="#" onsubmit="show(event)">
+                        <div class="hours">
+                            <label for="hours">Hours*</label>
+                            <input type="number" name="hours" id="hour" oninput="validateHours(this)">
+                        </div>     
+                        <div class="minutes">
+                            <label for="minutes">Minutes*</label>
+                            <input type="number" name="minutes" id="minutes" oninput="validateMinutes(this)">
+                        </div>
+                        <div class="seconds">
+                            <label for="seconds">Seconds*</label>
+                            <input type="number" name="seconds" id="seconds" oninput="validateSeconds(this)">
+                        </div>
+                        <input type="submit" value="Convert to Seconds">
+                    </form>
+                </div>
+                <div class="result result_show">
+                    <span class="text"></span><p class=""></p><span class="secs-text">seconds</span>
+                </div>
+                <div class="error">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/script.js"></script>
+</html>
