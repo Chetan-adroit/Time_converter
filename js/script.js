@@ -49,7 +49,7 @@ function show(event) {
         });
         resultParagraph.textContent=" ";    
         resultParagraph.classList.remove("res-p")
-        result.style.display="none";   
+        result_show.style.display="none";   
         
     }
     else if(seconds.value == ""){
@@ -64,7 +64,7 @@ function show(event) {
         });
         resultParagraph.textContent=" ";    
         resultParagraph.classList.remove("res-p")
-        result.style.display="none";   
+        result_show.style.display="none";   
     }
     else if(minutes.value == ""){
         Swal.fire({
@@ -78,13 +78,13 @@ function show(event) {
         });
         resultParagraph.textContent=" ";    
         resultParagraph.classList.remove("res-p")
-        result.style.display="none"; 
+        result_show.style.display="none"; 
     }
     else{
         result_show.style.display="inline-block";
         resultParagraph.classList.add("res-p")
         let result_a = `${hr.value} hr , ${minutes.value} mins , ${seconds.value} secs is`;
         result_text.textContent=result_a;
-        resultParagraph.textContent = (parseInt(hr.value, 10) * 3600) + (parseInt(minutes.value, 10) * 60) + parseInt(seconds.value, 10);
+        resultParagraph.textContent = hr.value * 3600 + minutes.value * 60 + seconds.value * 1;
     }
 }
